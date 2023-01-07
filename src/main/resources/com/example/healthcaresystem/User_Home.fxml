@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthcaresystem.UserHomeController">
+   <left>
+      <AnchorPane prefHeight="351.0" prefWidth="205.0" style="-fx-background-color: #5294e2;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logo" fitHeight="116.0" fitWidth="163.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Documents/Resources/Hlogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="138.0" text="FETCARE V1.00000.01" textFill="#fffbfb">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="1.0" layoutY="161.0" prefHeight="37.0" prefWidth="221.0" style="-fx-background-color: #27bec1;">
+               <children>
+                  <ImageView fx:id="homeimage" fitHeight="36.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Documents/Resources/icons8-hospital-sign-48.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="home" layoutX="57.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #27bec1;" text="HOME" textFill="#5294e2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="208.0" prefHeight="37.0" prefWidth="221.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="appointimage" fitHeight="36.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Documents/Resources/icons8-medical-doctor-96.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="appointment" layoutX="57.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: white;" text="APPOINTMENT" textFill="#5294e2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="255.0" prefHeight="37.0" prefWidth="221.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="presimage" fitHeight="36.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Documents/Resources/icons8-note-96.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="prescription" layoutX="57.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: white;" text="PRESCRIPTION" textFill="#5294e2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="302.0" prefHeight="37.0" prefWidth="221.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="recimage" fitHeight="36.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Documents/Resources/icons8-receipt-approved-96.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="receipts" layoutX="57.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: white;" text="RECEIPTS" textFill="#5294e2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="48.0" prefWidth="449.0" style="-fx-background-color: #a8adb2;">
+               <children>
+                  <Label layoutX="329.0" layoutY="16.0" text="ID" />
+                  <AnchorPane layoutX="352.0" layoutY="17.0" prefHeight="15.0" prefWidth="76.0" style="-fx-border-color: WHITE; -fx-background-color: WHITE;">
+                     <children>
+                        <Label fx:id="id_label" layoutY="-1.0" prefHeight="17.0" prefWidth="75.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="edit_profile" layoutX="7.0" layoutY="48.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="91.0" style="-fx-background-color: white;" text="Edit Details" textFill="#5294e2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="userimage" fitHeight="49.0" fitWidth="59.0" layoutX="7.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Documents/Resources/icons8-female-user-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ageimage" fitHeight="49.0" fitWidth="59.0" layoutX="7.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Documents/Resources/icons8-age-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="statusimage" fitHeight="19.0" fitWidth="21.0" layoutX="22.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Documents/Resources/icons8-ok-48.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username2" layoutX="56.0" layoutY="91.0" text="User Name" />
+            <Label fx:id="userage" layoutX="56.0" layoutY="153.0" text="User Age" />
+            <Label fx:id="status" layoutX="53.0" layoutY="211.0" text="Appointment Status" />
+            <ImageView fx:id="profile_image" fitHeight="140.0" fitWidth="200.0" layoutX="230.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
